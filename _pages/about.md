@@ -1,56 +1,176 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "Jiakang Huang"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+<div class="home-page">
+  <a id="about"></a>
+  <section class="home-section home-section--intro">
+    <p class="home-page__lead">
+      I am <strong>Jiakang (Daniel) Huang</strong>, a Bachelor of Science student in <strong>Computer Science</strong> at the
+      <strong>University of British Columbia</strong>. My research interests lie at the intersection of AI systems, AI agents,
+      LLM compilers, distributed databases, and memory systems.
+    </p>
+    <p>
+      I am currently working with <strong>Henry Chan</strong>, a Principal Software Engineer at <strong>Huawei Canada's Field Lab</strong>,
+      where I contribute to the development of GaussDB's shared-nothing distributed database system and its vector database branch.
+      In parallel, I am conducting independent research on <strong>graph fusion strategies in PyTorch Inductor</strong>. During my
+      third year, I also served as an undergraduate teaching assistant for <strong>CPSC 213</strong>, supporting students in
+      computer systems and low-level programming.
+    </p>
+    <p>
+      My long-term goal is to build sustainable, self-evolving <strong>AI agents</strong> that can continuously learn, adapt, and
+      improve. My research path reflects this vision: my first paper focuses on <strong>natural language processing</strong>, aiming to help AI
+      better understand human language; my second paper centers on AI infrastructure, targeting faster and more efficient systems
+      for training and serving models; and my planned third paper will explore AI memory systems, enabling agents to develop
+      stronger long-term memory.
+    </p>
+    <p>
+      Beyond academics and research, I co-founded <strong>iMark</strong>, an AI bookmark assistant built on
+      retrieval-augmented generation, memory-based personalization, and end-to-end product design. Outside of work, I enjoy
+      basketball and CS:GO, where I once ranked in the top 5% globally.
+    </p>
+    <div class="home-tag-list">
+      <span class="home-tag">AI Systems</span>
+<span class="home-tag">LLM Compilers</span>
+      <span class="home-tag">NLP</span>
+      <span class="home-tag">Distributed Databases</span>
+      <span class="home-tag">Memory Systems</span>
+    </div>
+  </section>
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+  <a id="education"></a>
+  <section class="home-section">
+    <h2 class="home-section__title"><i class="fas fa-graduation-cap" aria-hidden="true"></i>Education</h2>
+    <div class="home-card">
+      <div class="home-card__body">
+        <div class="home-card__logo-wrap"><img class="home-card__logo" src="/images/ubc-logo.png" alt="UBC" style="width:68px;height:68px;"></div>
+        <div class="home-card__main">
+          <h3>University of British Columbia</h3>
+          <p class="home-card__detail">Bachelor of Science in Computer Science</p>
+        </div>
+      </div>
+      <div class="home-card__period">Sep. 2022 - Dec. 2026</div>
+    </div>
+    <div class="home-card">
+      <div class="home-card__body">
+        <div class="home-card__logo-wrap"><img class="home-card__logo" src="/images/pku_logo.png" alt="PKU"></div>
+        <div class="home-card__main">
+          <h3>Peking University</h3>
+          <p class="home-card__detail">Exchange Student, Computer Engineering</p>
+        </div>
+      </div>
+      <div class="home-card__period">May 2024 - Sep. 2024</div>
+    </div>
+    <div class="home-card">
+      <div class="home-card__body">
+        <div class="home-card__logo-wrap"><img class="home-card__logo" src="/images/chengdu_fls_logo.png" alt="CFLS"></div>
+        <div class="home-card__main">
+          <h3>Chengdu Foreign Languages School</h3>
+          <p class="home-card__detail">High School</p>
+        </div>
+      </div>
+      <div class="home-card__period">Sep. 2019 - Jun. 2022</div>
+    </div>
+  </section>
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+  <a id="experience"></a>
+  <section class="home-section">
+    <h2 class="home-section__title"><i class="fas fa-briefcase" aria-hidden="true"></i>Experience</h2>
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+    <div class="home-card">
+      <div class="home-card__body">
+        <div class="home-card__logo-wrap"><img class="home-card__logo" src="/images/Utoronto_logo.png" alt="UofT" style="width:68px;height:68px;"></div>
+        <div class="home-card__main">
+          <h3>University of Toronto</h3>
+          <p class="home-card__detail">Research Assistant – Graph Fusion Optimization</p>
+        </div>
+      </div>
+      <div class="home-card__period">Jan. 2026 - Current</div>
+    </div>
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+    <div class="home-card">
+      <div class="home-card__body">
+        <div class="home-card__logo-wrap"><img class="home-card__logo" src="/images/imark_logo.png" alt="iMark" style="width:80px;height:80px;"></div>
+        <div class="home-card__main">
+          <h3>iMark</h3>
+          <p class="home-card__detail">Co-founder & AI Technical Lead</p>
+        </div>
+      </div>
+      <div class="home-card__period">Sep. 2025 - Current</div>
+    </div>
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+    <div class="home-card">
+      <div class="home-card__body">
+        <div class="home-card__logo-wrap"><img class="home-card__logo" src="/images/huawei_logo.png" alt="GaussDB"></div>
+        <div class="home-card__main">
+          <h3>Huawei Canada</h3>
+          <p class="home-card__detail">Software Engineering Co-op</p>
+        </div>
+      </div>
+      <div class="home-card__period">Jan. 2025 – Dec. 2025</div>
+    </div>
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+    <div class="home-card">
+      <div class="home-card__body">
+        <div class="home-card__logo-wrap"><img class="home-card__logo" src="/images/ubc-logo.png" alt="UBC" style="width:68px;height:68px;"></div>
+        <div class="home-card__main">
+          <h3>UBC Department of Computer Science</h3>
+          <p class="home-card__detail">Undergraduate Teaching Assistant</p>
+        </div>
+      </div>
+      <div class="home-card__period">Sep. 2024 – Dec. 2024</div>
+    </div>
+  </section>
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+  <a id="publications"></a>
+  <section class="home-section">
+    <h2 class="home-section__title"><i class="fas fa-file-lines" aria-hidden="true"></i>Publications</h2>
+    {% assign displayed_publications = 0 %}
+    <div class="home-post-grid">
+      {% for post in site.publications reversed %}
+        {% if displayed_publications < 3 %}
+          {% assign displayed_publications = displayed_publications | plus: 1 %}
+          <article class="home-post-card">
+            <p class="home-post-card__date">{{ post.date | date: "%B %d, %Y" }}</p>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            {% if post.venue %}<p><strong>{{ post.venue }}</strong></p>{% endif %}
+            {% if post.excerpt %}<p>{{ post.excerpt | strip_html | strip_newlines | truncate: 220 }}</p>{% endif %}
+          </article>
+        {% endif %}
+      {% endfor %}
 
-**Markdown generator**
+      {% if displayed_publications == 0 %}
+        <article class="home-post-card home-post-card--empty">
+          <p class="home-post-card__date">No publications added yet</p>
+          <h3>Publications</h3>
+          <p>This section is ready for papers, preprints, or project write-ups.</p>
+        </article>
+      {% endif %}
+    </div>
+  </section>
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
-
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
-
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
-
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+  <a id="blog"></a>
+  <section class="home-section">
+    <h2 class="home-section__title"><i class="fas fa-pen-nib" aria-hidden="true"></i>Blog</h2>
+    {% assign displayed_posts = 0 %}
+    <div class="home-post-grid">
+      {% for post in site.posts %}
+        {% unless post.title contains 'Blog Post number' or post.title == 'Future Blog Post' %}
+          {% if displayed_posts < 3 %}
+            {% assign displayed_posts = displayed_posts | plus: 1 %}
+            <article class="home-post-card">
+              <p class="home-post-card__date">{{ post.date | date: "%B %d, %Y" }}</p>
+              <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+              <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
+            </article>
+          {% endif %}
+        {% endunless %}
+      {% endfor %}
+    </div>
+  </section>
+</div>
