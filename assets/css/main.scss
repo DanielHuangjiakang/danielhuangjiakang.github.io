@@ -283,6 +283,22 @@ body {
   line-height: 1.55;
 }
 
+.home-card__detail--with-link {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.home-card__detail-link {
+  margin-left: auto;
+  flex-shrink: 0;
+  font-size: 0.96rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
 .home-card__detail--strong {
   color: var(--global-text-color);
   font-weight: 600;

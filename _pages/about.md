@@ -30,7 +30,7 @@ redirect_from:
       stronger long-term memory.
     </p>
     <p>
-      Beyond academics and research, I co-founded <strong>iMark</strong>, an AI bookmark assistant built on
+      Beyond academics and research, I co-founded <strong><a href="https://imarkai.com/">iMark</a></strong>, an AI bookmark assistant built on
       retrieval-augmented generation, memory-based personalization, and end-to-end product design. Outside of work, I enjoy
       basketball and CS:GO, where I once ranked in the top 5% globally.
     </p>
@@ -100,7 +100,10 @@ redirect_from:
         <div class="home-card__logo-wrap"><img class="home-card__logo" src="/images/imark_logo.png" alt="iMark" style="width:80px;height:80px;"></div>
         <div class="home-card__main">
           <h3>iMark</h3>
-          <p class="home-card__detail">Co-founder & AI Technical Lead</p>
+          <p class="home-card__detail home-card__detail--with-link">
+            <span>Co-founder & AI Technical Lead</span>
+            <a class="home-card__detail-link" href="https://imarkai.com/">[Website]</a>
+          </p>
         </div>
       </div>
       <div class="home-card__period">Sep. 2025 - Current</div>
