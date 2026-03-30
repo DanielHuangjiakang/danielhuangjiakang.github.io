@@ -101,10 +101,10 @@ body {
 .page__title {
   margin-bottom: 1.25rem;
   font-family: $home-font;
-  font-size: clamp(2.2rem, 4vw, 3rem);
+  font-size: clamp(1.85rem, 3.1vw, 2.45rem);
   font-weight: 800;
   letter-spacing: -0.04em;
-  line-height: 1.02;
+  line-height: 1.08;
 }
 
 .page__content {
@@ -323,6 +323,25 @@ body {
   border-radius: 1rem;
   background: var(--global-bg-color);
   box-shadow: $home-shadow;
+  overflow: hidden;
+}
+
+.home-post-card__image-link {
+  display: block;
+  margin-top: 1.15rem;
+}
+
+.home-post-card__image {
+  display: block;
+  width: 100%;
+  max-width: 920px;
+  max-height: 320px;
+  margin: 0 auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border: 1px solid var(--global-border-color);
+  border-radius: 0.9rem;
+  background: #edf4f7;
 }
 
 .home-post-card h3 {
@@ -344,6 +363,80 @@ body {
   font-size: 0.92rem !important;
   font-weight: 700;
   letter-spacing: 0.02em;
+}
+
+.home-post-card__authors {
+  margin-bottom: 0.55rem !important;
+  color: var(--global-text-color-light);
+  font-size: 0.94rem !important;
+  line-height: 1.5 !important;
+}
+
+.post-feature-image {
+  margin: 1.4rem 0 2rem;
+  text-align: center;
+}
+
+.post-feature-image img {
+  display: inline-block;
+  width: 100%;
+  max-width: 920px;
+  max-height: 460px;
+  object-fit: cover;
+  border: 1px solid var(--global-border-color);
+  border-radius: 1rem;
+  background: #edf4f7;
+}
+
+.page__header-meta-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.page__header-meta-row .page__date {
+  margin: 0;
+  min-width: 0;
+}
+
+.page__language-switch {
+  display: inline-flex;
+  gap: 0.65rem;
+  align-items: center;
+  justify-self: end;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.page__language-switch .page__language-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 5.6rem;
+  min-height: 2.35rem;
+  padding: 0.38rem 0.8rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 999px;
+  color: var(--global-text-color-light);
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  transition: all 0.18s ease;
+}
+
+.page__language-switch .page__language-link:hover {
+  color: var(--global-text-color);
+  border-color: $home-accent;
+}
+
+.page__language-switch .page__language-link.is-active {
+  border-color: $home-accent;
+  background: $home-accent-soft;
+  color: $home-accent;
 }
 
 .home-post-card h3 a {

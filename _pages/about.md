@@ -165,13 +165,19 @@ redirect_from:
     {% assign displayed_posts = 0 %}
     <div class="home-post-grid">
       {% for post in site.posts %}
-        {% unless post.title contains 'Blog Post number' or post.title == 'Future Blog Post' %}
+        {% unless post.title contains 'Blog Post number' or post.title == 'Future Blog Post' or post.lang == 'zh' %}
           {% if displayed_posts < 3 %}
             {% assign displayed_posts = displayed_posts | plus: 1 %}
             <article class="home-post-card">
               <p class="home-post-card__date">{{ post.date | date: "%B %d, %Y" }}</p>
+              {% if post.author_line %}<p class="home-post-card__authors">{{ post.author_line }}</p>{% endif %}
               <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
               <p>{{ post.excerpt | strip_html | strip_newlines | truncate: 180 }}</p>
+              {% if post.header.teaser %}
+                <a class="home-post-card__image-link" href="{{ post.url | relative_url }}">
+                  <img class="home-post-card__image" src="{{ post.header.teaser | prepend: '/images/' | relative_url }}" alt="{{ post.title }}">
+                </a>
+              {% endif %}
             </article>
           {% endif %}
         {% endunless %}

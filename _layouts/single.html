@@ -30,17 +30,51 @@ layout: default
           {% if page.read_time %}
             <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}
-        {% if page.modified %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
+        {% assign has_language_switch = false %}
+        {% if page.translation_key %}
+          {% assign translation_posts = site.posts | where: "translation_key", page.translation_key %}
+          {% assign english_version = translation_posts | where: "lang", "en" | first %}
+          {% assign chinese_version = translation_posts | where: "lang", "zh" | first %}
+          {% if english_version or chinese_version %}
+            {% assign has_language_switch = true %}
+          {% endif %}
         {% endif %}
-        
-        {% if page.collection == 'teaching' %}
-          <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif page.venue and page.date %}
-          <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif page.date %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
-        {% endif %}    
+
+        {% assign has_header_meta = false %}
+        {% if page.modified or page.collection == 'teaching' or page.date %}
+          {% assign has_header_meta = true %}
+        {% endif %}
+        {% if page.venue and page.date %}
+          {% assign has_header_meta = true %}
+        {% endif %}
+        {% if has_language_switch %}
+          {% assign has_header_meta = true %}
+        {% endif %}
+
+        {% if has_header_meta %}
+          <div class="page__header-meta-row" style="display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:1rem;width:100%;margin-bottom:1rem;">
+            {% if page.modified %}
+              <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
+            {% elsif page.collection == 'teaching' %}
+              <p class="page__date">{{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}</p>
+            {% elsif page.venue and page.date %}
+              <p class="page__date">Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }}</p>
+            {% elsif page.date %}
+              <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+            {% endif %}
+
+            {% if has_language_switch %}
+              <nav class="page__language-switch" aria-label="Language switcher" style="display:inline-flex;gap:0.65rem;align-items:center;justify-self:end;white-space:nowrap;margin:0 0 0 auto;">
+                {% if english_version %}
+                  <a class="page__language-link{% if page.lang == 'en' %} is-active{% endif %}" href="{{ english_version.url | relative_url }}" style="display:inline-flex;align-items:center;justify-content:center;min-width:5.6rem;min-height:2.35rem;padding:0.38rem 0.8rem;border:1px solid {% if page.lang == 'en' %}#63b8da{% else %}var(--global-border-color){% endif %};border-radius:999px;color:{% if page.lang == 'en' %}#63b8da{% else %}var(--global-text-color-light){% endif %};background:{% if page.lang == 'en' %}#eaf7fc{% else %}transparent{% endif %};font-size:0.95rem;font-weight:700;line-height:1;text-decoration:none;">English</a>
+                {% endif %}
+                {% if chinese_version %}
+                  <a class="page__language-link{% if page.lang == 'zh' %} is-active{% endif %}" href="{{ chinese_version.url | relative_url }}" style="display:inline-flex;align-items:center;justify-content:center;min-width:5.6rem;min-height:2.35rem;padding:0.38rem 0.8rem;border:1px solid {% if page.lang == 'zh' %}#63b8da{% else %}var(--global-border-color){% endif %};border-radius:999px;color:{% if page.lang == 'zh' %}#63b8da{% else %}var(--global-text-color-light){% endif %};background:{% if page.lang == 'zh' %}#eaf7fc{% else %}transparent{% endif %};font-size:0.95rem;font-weight:700;line-height:1;text-decoration:none;">中文</a>
+                {% endif %}
+              </nav>
+            {% endif %}
+          </div>
+        {% endif %}
         </header>
       {% endunless %}
 
@@ -85,7 +119,9 @@ layout: default
 
       {% if page.share %}{% include social-share.html %}{% endif %}
 
-      {% include post_pagination.html %}
+      {% if page.show_post_navigation != false %}
+        {% include post_pagination.html %}
+      {% endif %}
     </div>
 
     {% if site.comments.provider and page.comments %}
