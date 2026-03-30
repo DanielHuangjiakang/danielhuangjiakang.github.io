@@ -2,7 +2,7 @@
 permalink: /
 title: "Jiakang Huang"
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
@@ -43,7 +43,8 @@ redirect_from:
     </div>
   </section>
 
-  <a id="education"></a>
+<a id="education"></a>
+
   <section class="home-section">
     <h2 class="home-section__title"><i class="fas fa-graduation-cap" aria-hidden="true"></i>Education</h2>
     <div class="home-card">
@@ -78,7 +79,8 @@ redirect_from:
     </div>
   </section>
 
-  <a id="experience"></a>
+<a id="experience"></a>
+
   <section class="home-section">
     <h2 class="home-section__title"><i class="fas fa-briefcase" aria-hidden="true"></i>Experience</h2>
 
@@ -125,10 +127,12 @@ redirect_from:
       </div>
       <div class="home-card__period">Sep. 2024 – Dec. 2024</div>
     </div>
+
   </section>
 
-  <a id="publications"></a>
-  <section class="home-section">
+<a id="publications"></a>
+
+  <!-- <section class="home-section">
     <h2 class="home-section__title"><i class="fas fa-file-lines" aria-hidden="true"></i>Publications</h2>
     {% assign displayed_publications = 0 %}
     <div class="home-post-grid">
@@ -152,9 +156,10 @@ redirect_from:
         </article>
       {% endif %}
     </div>
-  </section>
+  </section> -->
 
-  <a id="blog"></a>
+<a id="blog"></a>
+
   <section class="home-section">
     <h2 class="home-section__title"><i class="fas fa-pen-nib" aria-hidden="true"></i>Blog</h2>
     {% assign displayed_posts = 0 %}
