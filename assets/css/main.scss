@@ -397,8 +397,9 @@ body {
   display: inline-block;
   width: 100%;
   max-width: 920px;
-  max-height: 460px;
-  object-fit: cover;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
   border: 1px solid var(--global-border-color);
   border-radius: 1rem;
   background: #edf4f7;
