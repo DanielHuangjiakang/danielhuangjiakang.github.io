@@ -111,12 +111,10 @@ redirect_from:
 
     <div class="home-card">
       <div class="home-card__body">
+        <div class="home-card__logo-wrap"><img class="home-card__logo" src="/images/ucla-logo.png" alt="UCLA" style="width:68px;height:68px;object-fit:contain;"></div>
         <div class="home-card__main">
           <h3>University of California, Los Angeles</h3>
-          <p class="home-card__detail home-card__detail--with-link">
-            <span>Visiting Researcher, BigML Lab (Prof. Baharan Mirzasoleiman)</span>
-            <a class="home-card__detail-link" href="https://baharanm.github.io/bigml/">[Lab]</a>
-          </p>
+          <p class="home-card__detail">Visiting Researcher, <a href="https://baharanm.github.io/bigml/">BigML Lab</a></p>
         </div>
       </div>
       <div class="home-card__period">Jun. 2026 - Current</div>
