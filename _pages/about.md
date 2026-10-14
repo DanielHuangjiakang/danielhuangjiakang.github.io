@@ -147,7 +147,7 @@ redirect_from:
         <div class="home-card__logo-wrap"><img class="home-card__logo" src="/images/ubc-logo.png" alt="UBC" style="width:68px;height:68px;"></div>
         <div class="home-card__main">
           <h3>UBC Department of Computer Science</h3>
-          <p class="home-card__detail">Undergraduate Teaching Assistant</p>
+          <p class="home-card__detail">Undergraduate Teaching Assistant @<a href="https://vancouver.calendar.ubc.ca/course-descriptions/courses/cpscv-213-introduction-computer-systems">CPSC 213</a></p>
         </div>
       </div>
       <div class="home-card__period">Sep. 2024 – Dec. 2024</div>
