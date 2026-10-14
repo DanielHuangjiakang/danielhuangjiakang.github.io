@@ -8,9 +8,15 @@ translation_key: "iteration-speed-ai-era"
 lang: zh
 related: false
 show_post_navigation: false
+header:
+  teaser: iteration-speed-cover.png
 ---
 
 **作者：** Jiakang Huang
+
+<figure class="post-feature-image">
+  <img src="/images/iteration-speed-cover.png" alt="封面：AI 时代，迭代速度就是竞争力">
+</figure>
 
 在 AI 时代，项目的迭代速度和数量，正在变成最重要的能力之一。
 

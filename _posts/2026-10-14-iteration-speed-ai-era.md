@@ -8,9 +8,15 @@ translation_key: "iteration-speed-ai-era"
 lang: en
 related: false
 show_post_navigation: false
+header:
+  teaser: iteration-speed-cover.png
 ---
 
 **Author:** Jiakang Huang
+
+<figure class="post-feature-image">
+  <img src="/images/iteration-speed-cover.png" alt="Cover: In the AI era, iteration speed is the edge">
+</figure>
 
 In the AI era, how fast you iterate, and how many projects you can push forward at once, is becoming one of the most important skills you can have.
 
