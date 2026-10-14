@@ -114,7 +114,7 @@ redirect_from:
         <div class="home-card__logo-wrap"><img class="home-card__logo" src="/images/ucla-logo.png" alt="UCLA" style="width:68px;height:68px;object-fit:contain;"></div>
         <div class="home-card__main">
           <h3>University of California, Los Angeles</h3>
-          <p class="home-card__detail">Visiting Researcher @<a href="https://baharanm.github.io/bigml/">BigML Lab</a></p>
+          <p class="home-card__detail">Visiting Researcher @<a href="https://baharanm.github.io/bigml/"><strong>BigML Lab</strong></a></p>
         </div>
       </div>
       <div class="home-card__period">Jun. 2026 - Current</div>
@@ -136,7 +136,7 @@ redirect_from:
         <div class="home-card__logo-wrap"><img class="home-card__logo" src="/images/imark_logo.png" alt="iMark" style="width:80px;height:80px;"></div>
         <div class="home-card__main">
           <h3>iMark</h3>
-          <p class="home-card__detail">Co-founder &amp; AI Technical Lead @<a href="https://imarkai.com/">iMark</a></p>
+          <p class="home-card__detail">Co-founder &amp; AI Technical Lead @<a href="https://imarkai.com/"><strong>iMark</strong></a></p>
         </div>
       </div>
       <div class="home-card__period">Sep. 2025 - Jun. 2026</div>
@@ -147,7 +147,7 @@ redirect_from:
         <div class="home-card__logo-wrap"><img class="home-card__logo" src="/images/ubc-logo.png" alt="UBC" style="width:68px;height:68px;"></div>
         <div class="home-card__main">
           <h3>UBC Department of Computer Science</h3>
-          <p class="home-card__detail">Undergraduate Teaching Assistant @<a href="https://vancouver.calendar.ubc.ca/course-descriptions/courses/cpscv-213-introduction-computer-systems">CPSC 213</a></p>
+          <p class="home-card__detail">Undergraduate Teaching Assistant @<a href="https://vancouver.calendar.ubc.ca/course-descriptions/courses/cpscv-213-introduction-computer-systems"><strong>CPSC 213</strong></a></p>
         </div>
       </div>
       <div class="home-card__period">Sep. 2024 – Dec. 2024</div>
