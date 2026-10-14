@@ -14,7 +14,7 @@ redirect_from:
       I am <strong>Jiakang (Daniel) Huang</strong>, a final-year B.Sc. student in <strong>Computer Science</strong> at the
       <strong>University of British Columbia</strong>. I am currently a visiting researcher in the
       <strong><a href="https://baharanm.github.io/bigml/">BigML Lab</a></strong> at <strong>UCLA</strong>, advised by Prof. Baharan Mirzasoleiman,
-      and previously worked as a research assistant at the <strong>University of Toronto</strong> with Prof. Gerald Penn and Dr. Jinman Zhao.
+      and previously worked as a research assistant at the <strong>University of Toronto</strong>.
     </p>
     <p>
       I believe that as models grow, what matters shifts from how much we spend to where we spend it. Every training run has a fixed
