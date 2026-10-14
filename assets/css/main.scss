@@ -647,3 +647,8 @@ body {
     padding-left: 0.2rem;
   }
 }
+
+/* Avoid single-word last lines (orphans) in paragraphs */
+p, li, .pub-card__abstract, .news-item__text {
+  text-wrap: pretty;
+}

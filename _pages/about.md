@@ -12,9 +12,9 @@ redirect_from:
   <section class="home-section home-section--intro">
     <p class="home-page__lead">
       I am <strong>Jiakang (Daniel) Huang</strong>, a final-year B.Sc. student in <strong>Computer Science</strong> at the
-      <strong>University of British Columbia</strong>. I am currently a visiting researcher in the
+      <strong>University of British&nbsp;Columbia</strong>. I am currently a visiting researcher in the
       <strong><a href="https://baharanm.github.io/bigml/">BigML Lab</a></strong> at <strong>UCLA</strong>, advised by Prof. Baharan Mirzasoleiman,
-      and previously worked as a research assistant at the <strong>University of Toronto</strong>.
+      and previously worked as a research assistant at the <strong>University of&nbsp;Toronto</strong>.
     </p>
     <p>
       I believe that as models grow, what matters shifts from how much we spend to where we spend it. Every training run has a fixed
@@ -25,7 +25,7 @@ redirect_from:
     <p>
       At UCLA I work on <strong>teacher selection for LLM post-training</strong>: using cheap, student-aware signals to pick the right
       teacher model for reasoning SFT before generating data with every teacher, and extending this kind of data curation to agentic
-      trajectories. I am applying to PhD programs for Fall 2027.
+      trajectories. I am applying to PhD programs for Fall&nbsp;2027.
     </p>
     <p>
       Beyond research, I co-founded <strong><a href="https://imarkai.com/">iMark</a></strong>, an AI bookmark assistant built on
