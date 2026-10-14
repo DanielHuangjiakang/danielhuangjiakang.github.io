@@ -652,3 +652,8 @@ body {
 p, li, .pub-card__abstract, .news-item__text {
   text-wrap: pretty;
 }
+
+.pub-card__links {
+  margin: -0.25rem 0 0.75rem;
+  font-size: 0.95rem;
+}

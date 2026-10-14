@@ -12,7 +12,10 @@ status: accepted
 authors: "Jinman Zhao, Yining Wang, Jiahe Liu, Xueyan Zhang, Linbo Cao, Jiakang Huang, Yiren Zhao, Renyi Cai, YiTian Ding, Gerald Penn"
 header:
   teaser: syntactic-prediction-rl-cover.svg
+paperurl: "https://drive.google.com/file/d/1WCfqVSMVibQns_b9hOwuzeHq80Yi9SM2/view?usp=sharing"
 ---
+
+**Paper:** [PDF](https://drive.google.com/file/d/1WCfqVSMVibQns_b9hOwuzeHq80Yi9SM2/view?usp=sharing)
 
 **Accepted to EMNLP 2026 Main Conference.** This is my first paper.
 
