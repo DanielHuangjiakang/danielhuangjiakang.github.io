@@ -15,7 +15,7 @@ header:
 paperurl: "https://drive.google.com/file/d/1WCfqVSMVibQns_b9hOwuzeHq80Yi9SM2/view?usp=sharing"
 ---
 
-**Paper:** [PDF](https://drive.google.com/file/d/1WCfqVSMVibQns_b9hOwuzeHq80Yi9SM2/view?usp=sharing)
+{% include pub-links.html post=page %}
 
 **Accepted to EMNLP 2026 Main Conference.** This is my first paper.
 

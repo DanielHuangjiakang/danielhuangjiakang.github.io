@@ -174,9 +174,7 @@ redirect_from:
             {% if post.authors %}
               <p class="pub-card__authors">{{ post.authors | replace: "Jiakang Huang", "<strong><u>Jiakang Huang</u></strong>" }}</p>
             {% endif %}
-            {% if post.paperurl %}
-              <p class="pub-card__links"><a href="{{ post.paperurl }}" target="_blank" rel="noopener"><strong>[PDF]</strong></a></p>
-            {% endif %}
+            {% include pub-links.html post=post %}
             {% if post.header.teaser %}
               <a class="pub-card__image-link" href="{{ post.url | relative_url }}">
                 <img class="pub-card__image" src="{{ post.header.teaser | prepend: '/images/' | relative_url }}" alt="{{ post.title }}">

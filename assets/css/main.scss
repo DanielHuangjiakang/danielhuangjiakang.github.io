@@ -653,7 +653,32 @@ p, li, .pub-card__abstract, .news-item__text {
   text-wrap: pretty;
 }
 
-.pub-card__links {
-  margin: -0.25rem 0 0.75rem;
-  font-size: 0.95rem;
+/* Pill-style publication links (Paper / Project / Code / Models) */
+.pub-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 0.2rem 0 0.9rem;
+}
+.pub-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.38rem 1rem;
+  border: 1px solid rgba(65, 152, 182, 0.45);
+  border-radius: 999px;
+  background: rgba(78, 168, 203, 0.08);
+  color: #34829d !important;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-decoration: none !important;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+.pub-pill:hover {
+  background: rgba(78, 168, 203, 0.18);
+  border-color: #4198b6;
+}
+.pub-pill i {
+  font-size: 0.95em;
 }
