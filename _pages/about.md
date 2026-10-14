@@ -125,7 +125,7 @@ redirect_from:
         <div class="home-card__logo-wrap"><img class="home-card__logo" src="/images/Utoronto_logo.png" alt="UofT" style="width:68px;height:68px;"></div>
         <div class="home-card__main">
           <h3>University of Toronto</h3>
-          <p class="home-card__detail">Research Assistant (Prof. Gerald Penn, Dr. Jinman Zhao)</p>
+          <p class="home-card__detail">Research Assistant</p>
         </div>
       </div>
       <div class="home-card__period">Dec. 2025 - Jun. 2026</div>
