@@ -1,7 +1,7 @@
 {% assign p = include.post %}
 {% if p.paperurl or p.projecturl or p.codeurl or p.modelurl %}
-<div class="pub-links">
-  {% if p.paperurl %}<a class="pub-pill" href="{{ p.paperurl }}" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i>Paper</a>{% endif %}
+<div class="pub-links{% if include.compact %} pub-links--compact{% endif %}">
+  {% if p.paperurl %}<a class="pub-pill" href="{{ p.paperurl }}" target="_blank" rel="noopener">{% include pdf-icon.svg %}Paper</a>{% endif %}
   {% if p.projecturl %}<a class="pub-pill" href="{{ p.projecturl }}" target="_blank" rel="noopener"><i class="fas fa-globe" aria-hidden="true"></i>Project</a>{% endif %}
   {% if p.codeurl %}<a class="pub-pill" href="{{ p.codeurl }}" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i>Code</a>{% endif %}
   {% if p.modelurl %}<a class="pub-pill" href="{{ p.modelurl }}" target="_blank" rel="noopener"><i class="fas fa-cube" aria-hidden="true"></i>Models</a>{% endif %}

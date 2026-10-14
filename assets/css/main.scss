@@ -682,3 +682,19 @@ p, li, .pub-card__abstract, .news-item__text {
 .pub-pill i {
   font-size: 0.95em;
 }
+
+.pub-card__meta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.pub-links--compact {
+  margin: 0;
+}
+.pub-links--compact .pub-pill {
+  padding: 0.22rem 0.8rem;
+  font-size: 0.9rem;
+}
+.pub-pill__icon {
+  flex-shrink: 0;
+}

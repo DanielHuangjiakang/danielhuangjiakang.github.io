@@ -168,13 +168,12 @@ redirect_from:
           <article class="pub-card">
             <div class="pub-card__header">
               {% if post.venue_short %}<span class="pub-card__badge{% if post.status == 'accepted' %} pub-card__badge--accepted{% endif %}">{{ post.venue_short }}</span>{% endif %}
-              <span class="pub-card__year">{{ post.date | date: "%Y" }}</span>
+              <span class="pub-card__meta">{% include pub-links.html post=post compact=true %}<span class="pub-card__year">{{ post.date | date: "%Y" }}</span></span>
             </div>
             <h3 class="pub-card__title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
             {% if post.authors %}
               <p class="pub-card__authors">{{ post.authors | replace: "Jiakang Huang", "<strong><u>Jiakang Huang</u></strong>" }}</p>
             {% endif %}
-            {% include pub-links.html post=post %}
             {% if post.header.teaser %}
               <a class="pub-card__image-link" href="{{ post.url | relative_url }}">
                 <img class="pub-card__image" src="{{ post.header.teaser | prepend: '/images/' | relative_url }}" alt="{{ post.title }}">
