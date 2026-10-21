@@ -131,16 +131,6 @@ redirect_from:
       <div class="home-card__period">Dec. 2025 - Jun. 2026</div>
     </div>
 
-    <div class="home-card">
-      <div class="home-card__body">
-        <div class="home-card__logo-wrap"><img class="home-card__logo" src="/images/imark_logo.png" alt="iMark" style="width:80px;height:80px;"></div>
-        <div class="home-card__main">
-          <h3>iMark</h3>
-          <p class="home-card__detail">Co-founder &amp; AI Technical Lead @<a href="https://imarkai.com/"><strong>iMark</strong></a></p>
-        </div>
-      </div>
-      <div class="home-card__period">Sep. 2025 - Jun. 2026</div>
-    </div>
 
     <div class="home-card">
       <div class="home-card__body">
@@ -191,6 +181,49 @@ redirect_from:
           <p>No publications added yet.</p>
         </article>
       {% endif %}
+    </div>
+  </section>
+
+<a id="projects"></a>
+
+  <section class="home-section">
+    <h2 class="home-section__title"><i class="fas fa-laptop-code" aria-hidden="true"></i>Projects</h2>
+    <div class="pub-list">
+      <article class="pub-card">
+        <div class="pub-card__header">
+          <span class="pub-card__badge">Open Source</span>
+          <span class="pub-card__meta">
+            <span class="pub-links pub-links--compact"><a class="pub-pill" href="https://opentikz.org/" target="_blank" rel="noopener"><i class="fas fa-globe" aria-hidden="true"></i>Website</a></span>
+            <span class="pub-card__year">2026</span>
+          </span>
+        </div>
+        <h3 class="pub-card__title"><a href="https://opentikz.org/" target="_blank" rel="noopener">OpenTikZ</a></h3>
+        <a class="pub-card__image-link" href="https://opentikz.org/" target="_blank" rel="noopener"><img class="pub-card__image" src="/images/project-opentikz.gif" alt="OpenTikZ demo" loading="lazy"></a>
+        <p class="pub-card__abstract">An open-source TikZ figure library and AI agent skill for academic papers (225+ GitHub stars). Describe a figure, such as a system diagram, neural-network architecture, or pipeline, and get back paper-ready, editable TikZ.</p>
+      </article>
+
+      <article class="pub-card">
+        <div class="pub-card__header">
+          <span class="pub-card__badge">Chrome Extension</span>
+          <span class="pub-card__meta">
+            <span class="pub-links pub-links--compact"><a class="pub-pill" href="https://imarkai.com/" target="_blank" rel="noopener"><i class="fas fa-globe" aria-hidden="true"></i>Website</a></span>
+            <span class="pub-card__year">2025</span>
+          </span>
+        </div>
+        <h3 class="pub-card__title"><a href="https://imarkai.com/" target="_blank" rel="noopener">iMark</a></h3>
+        <a class="pub-card__image-link" href="https://imarkai.com/" target="_blank" rel="noopener"><img class="pub-card__image" src="/images/project-imark.gif" alt="iMark demo" loading="lazy"></a>
+        <p class="pub-card__abstract">Co-founder &amp; AI Technical Lead. An agentic bookmark assistant with semantic search and web interactions, shipped as a Chrome extension with 100+ users. Built on retrieval-augmented generation (Pinecone + Gemini), with Stripe and Supabase.</p>
+      </article>
+
+      <article class="pub-card">
+        <div class="pub-card__header">
+          <span class="pub-card__badge">Web App</span>
+          <span class="pub-card__meta"><span class="pub-card__year">2024</span></span>
+        </div>
+        <h3 class="pub-card__title">UBC Campus Explorer</h3>
+        <img class="pub-card__image" src="/images/project-campus-explorer.gif" alt="UBC Campus Explorer demo" loading="lazy">
+        <p class="pub-card__abstract">A full-stack UBC campus navigation app: a custom query engine over UBC building and room data, with Google Maps walking routes between selected buildings (100+ weekly visits). Built with TypeScript, Express/Node.js, the Google Maps API, and Docker on AWS EC2.</p>
+      </article>
     </div>
   </section>
 
