@@ -12,7 +12,7 @@ status: accepted
 authors: "Jinman Zhao, Yining Wang, Jiahe Liu, Xueyan Zhang, Linbo Cao, Jiakang Huang, Yiren Zhao, Renyi Cai, YiTian Ding, Gerald Penn"
 header:
   teaser: syntactic-prediction-rl-cover.svg
-paperurl: "https://drive.google.com/file/d/1WCfqVSMVibQns_b9hOwuzeHq80Yi9SM2/view?usp=sharing"
+paperurl: "https://aclanthology.org/2026.emnlp-main.283/"
 ---
 
 {% include pub-links.html post=page %}
