@@ -193,7 +193,7 @@ redirect_from:
         <div class="pub-card__header">
           <span class="pub-card__badge">Open Source</span>
           <span class="pub-card__meta">
-            <span class="pub-links pub-links--compact"><a class="pub-pill" href="https://opentikz.org/" target="_blank" rel="noopener"><i class="fas fa-globe" aria-hidden="true"></i>Website</a><a class="pub-pill" href="https://github.com/opentikz/opentikz" target="_blank" rel="noopener" aria-label="OpenTikZ on GitHub"><i class="fab fa-github" aria-hidden="true"></i>GitHub<span class="pub-pill__count"><i class="fas fa-star" aria-hidden="true"></i><span data-gh-stars="opentikz/opentikz">236</span></span></a></span>
+            <span class="pub-links pub-links--compact"><span class="gh-star"><a class="github-button" href="https://github.com/opentikz/opentikz" data-size="large" data-show-count="true" aria-label="Star opentikz/opentikz on GitHub">Star</a></span><a class="pub-pill" href="https://opentikz.org/" target="_blank" rel="noopener"><i class="fas fa-globe" aria-hidden="true"></i>Website</a></span>
             <span class="pub-card__year">2026</span>
           </span>
         </div>
@@ -254,12 +254,4 @@ redirect_from:
     </div>
   </section>
 </div>
-
-<script>
-document.querySelectorAll('[data-gh-stars]').forEach(function (el) {
-  fetch('https://api.github.com/repos/' + el.getAttribute('data-gh-stars'))
-    .then(function (r) { return r.ok ? r.json() : null; })
-    .then(function (d) { if (d && typeof d.stargazers_count === 'number') el.textContent = d.stargazers_count.toLocaleString('en-US'); })
-    .catch(function () {});
-});
-</script>
+<script async defer src="https://buttons.github.io/buttons.js"></script>
