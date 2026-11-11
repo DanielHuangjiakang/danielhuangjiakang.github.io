@@ -218,7 +218,10 @@ redirect_from:
       <article class="pub-card">
         <div class="pub-card__header">
           <span class="pub-card__badge">Web App</span>
-          <span class="pub-card__meta"><span class="pub-card__year">2024</span></span>
+          <span class="pub-card__meta">
+            <span class="pub-links pub-links--compact"><a class="pub-pill" href="https://www.ubccampusexplorer.com/" target="_blank" rel="noopener"><i class="fas fa-globe" aria-hidden="true"></i>Website</a></span>
+            <span class="pub-card__year">2024</span>
+          </span>
         </div>
         <h3 class="pub-card__title">UBC Campus Explorer</h3>
         <img class="pub-card__image" src="/images/project-campus-explorer.gif" alt="UBC Campus Explorer demo" loading="lazy">
