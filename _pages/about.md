@@ -1,6 +1,8 @@
 ---
 permalink: /
 title: "Jiakang Huang"
+seo_title: "Jiakang (Daniel) Huang – UBC CS · UCLA BigML"
+description: "Jiakang (Daniel) Huang, Computer Science undergraduate at the University of British Columbia (UBC) and visiting researcher at the UCLA BigML Lab, working on data selection, model merging and ML compilers."
 author_profile: true
 redirect_from:
   - /about/

@@ -12,7 +12,7 @@ site_theme: "default" # The available themes options are "default", "air", "sunr
 title: "Jiakang Huang's Website"
 title_separator: "-"
 name: &name "Jiakang Huang"
-description: &description "Jiakang Huang's personal academic and research website" # Update this with a general description of your site, this is the default if not overridden by a page
+description: &description "Jiakang (Daniel) Huang, Computer Science undergraduate at the University of British Columbia (UBC) and visiting researcher at the UCLA BigML Lab, working on data selection, model merging and ML compilers." # Update this with a general description of your site, this is the default if not overridden by a page
 url: https://danielhuangjiakang.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                          # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl: "" # the subpath of your site, e.g. "/blog"
@@ -141,13 +141,17 @@ facebook:
   app_id:
   publisher:
 og_image: # Social media default site image
-og_description: # Social media default site image description
+og_description: "Jiakang (Daniel) Huang, Computer Science undergraduate at the University of British Columbia (UBC) and visiting researcher at the UCLA BigML Lab, working on data selection, model merging and ML compilers."
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type: # Person or Organization (defaults to Person)
-  name: # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type: Person
+  name: "Jiakang Huang"
+  alternate_name: "Daniel Huang"
+  links:
+    - "https://scholar.google.com/citations?user=lAfNjGgAAAAJ"
+    - "https://www.linkedin.com/in/jiakanghuang/"
+    - "https://github.com/DanielHuangjiakang"
 
 # Analytics
 analytics:
